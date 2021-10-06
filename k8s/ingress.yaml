@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nestjs-demo-ingress
+  namespace: beta
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+  -  host: kubernetes.docker.internal
+     http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: demo-svc
+            port:
+              number: 8000
