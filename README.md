@@ -1,3 +1,15 @@
+## This is the demo appliation of my NestJS Kubernetes Deployment Series on Medium  
+
+## Stories: 
+### [Part 1: Containerizing a NestJS application with Docker](https://medium.com/@huseyinnurbaki/nestjs-kubernetes-deployment-part-1-containerization-1e06b054b875)
+### [Part 2: Kubernetes Deployment](https://medium.com/@huseyinnurbaki/nestjs-kubernetes-deployment-part-2-deployment-dad327dee631)
+### [Part 3: Bonus: Ingress Configuration](https://medium.com/@huseyinnurbaki/nestjs-kubernetes-deployment-part-3-ingress-configuration-c7e77a3d24a8)
+### [Part 4: Bonus: Kubernetes CronJob - NestJS](https://medium.com/@huseyinnurbaki/nestjs-kubernetes-deployment-part-4-kubernetes-cronjob-nestjs-84d52268e3b1)
+
+---
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
