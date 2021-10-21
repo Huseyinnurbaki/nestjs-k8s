@@ -1,0 +1,33 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  namespace: beta
+  name: demo-cj
+spec:
+  schedule: "*/1 * * * *"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  startingDeadlineSeconds: 600
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: demo-cj
+            image: hhaluk/demo:0.0.3
+            resources:
+              requests:
+                memory: "64Mi"
+                cpu: "250m"
+              limits:
+                memory: "128Mi"
+                cpu: "500m"
+            env:
+            - name: NODE_ENV
+              value: "production"
+            - name: CRONJOB
+              value: "CRONJOB"
+          restartPolicy: Never
+
+
